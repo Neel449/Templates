@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A visually appealing webpage with scroll animations, parallax effects, and responsive design. Perfect for learning web development!">
+    <link rel="preload" href="./Img/hero.jpg" as="image">
+    <title>La Perla</title>
+    <link rel="stylesheet" href="realEstate.css">
+</head>
+
+<body>
+    <header>
+        <div class="link-div">
+            <span class="link">About</span>
+            <span class="link">The Building</span>
+            <span class="link">Location</span>
+            <span class="link">Amenities</span>
+        </div>
+        <span class="area">LP/52</span>
+        <div class="social-link">
+            <button type="button" class="inquire button-1" aria-label="Inquire Button">Inquire</button>
+            <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        <div class="modalMenu">
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            <div class="modal-link-div">
+                <span class="modal-link">About</span>
+                <span class="modal-link">The Building</span>
+                <span class="modal-link">Location</span>
+                <span class="modal-link">Amenities</span>
+            </div>
+            <button type="button" class="inquire button-1">Inquire</button>
+            <div class="modal-social-link">
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+
+    </header>
+    <section class="hero">
+        <div class="hero-div">
+            <div>
+                <p class="meet animate">Meet me at</p>
+                <p class="la-perla animate">LA PERLA</p>
+                <p class="meet animate">52 Brook St.</p>
+            </div>
+            <div>
+                <p class="hero-desc animate">Introducting a new living experience at the best location in town</p>
+                <button type="button" class="see-video button-1 animate">See Video</button>
+            </div>
+        </div>
+    </section>
+    <section class="section-1">
+        <div class="section-1-div">
+            <div class="section-text">
+                <p class="txt-title-1 txt-title animate">A different State of Mind</p>
+                <p class="txt-desc-1 txt-desc animate">Established in the historic quarter, where cultural legacy meets
+                    the sought-after
+                    culinary scene, Brook St. is the best kept secret of town, just across the sea front. Its urban
+                    renaissance is infusing new vibes and brings back creatives, trend setters and smart investors.
+                </p>
+            </div>
+            <div class="section-1-image-div">
+                <img src="./Img/section-1-image-1.jpg" class="section-1-image-1 animate" alt="dusk in city" loading="lazy">
+                <img src="./Img/section-1-image-2.jpg" class="section-1-image-2 animate" alt="beach view" loading="lazy">
+            </div>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="section-2-div">
+            <div class="section-text">
+                <p class="txt-title">The Building</p>
+                <p class="txt-desc">At 18 stories and with its unique design, La Perla is a modernist icon in the city’s
+                    skyline.
+                </p>
+            </div>
+            <div class="section-2-image-div">
+                <img src="./Img/section-2-image-1.jpg" class="section-2-image-1" alt="kitchen room" loading="lazy">
+                <img src="./Img/section-2-image-2.jpg" class="section-2-image-2" alt="washroom" loading="lazy">
+            </div>
+            <div class="section-bottom">
+                <span class="bottom-title">Gardenia Apt.</span>
+                <p class="bottom-para">
+                    I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a
+                    story and let your users know a little more about you.
+                </p>
+                <div class="plan">
+                    <div class="plan-object">
+                        <img src="./Img/building.svg" class="plan-icon" alt="floor icon" loading="lazy"><span class="plan-txt">Floors:
+                            1-2</span>
+                    </div>
+                    <div class="plan-object">
+                        <img src="./Img/window.svg" class="plan-icon" alt="grid icon" loading="lazy"><span class="plan-txt">Space:
+                            150sqm</span>
+                    </div>
+                    <div class="plan-object">
+                        <img src="./Img/bed.svg" class="plan-icon" alt="bed icon" loading="lazy"><span class="plan-txt">Bedrooms:
+                            2</span>
+                    </div>
+                    <div class="plan-object">
+                        <img src="./Img/bathroom.svg" class="plan-icon" alt="shower icon" loading="lazy"><span
+                            class="plan-txt">Bathrooms: 1-2</span>
+                    </div>
+                </div>
+                <div class="bottom-button">
+                    <button type="button" class="button-1 check-availability">Check Availability</button>
+                    <button type="button" class="button-2 view-floor-plan">View Floor Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-3">
+        <div class="section-3-div">
+            <div class="section-3-image-div">
+                <img src="./Img/section-3-image-1.jpg" class="section-3-image-1" alt="hall" loading="lazy">
+                <img src="./Img/section-3-image-2.jpg" class="section-3-image-2" alt="bedroom" loading="lazy">
+            </div>
+            <div class="section-bottom">
+                <span class="bottom-title">Ocean Apt.</span>
+                <p class="bottom-para">
+                    I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a
+                    story and let your users know a little more about you.
+                </p>
+                <div class="plan">
+                    <div class="plan-object">
+                        <img src="./Img/building-white.svg" class="plan-icon" style="color:white"
+                            alt="building icon" loading="lazy"><span class="plan-txt">Floors: 1-2</span>
+                    </div>
+                    <div class="plan-object">
+                        <img src="./Img/window-white.svg" class="plan-icon" alt="grid icon"><span
+                            class="plan-txt" loading="lazy">Space: 150sqm</span>
+                    </div>
+                    <div class="plan-object">
+                        <img src="./Img/bed-white.svg" class="plan-icon" alt="bed icon"><span class="plan-txt" loading="lazy">Bedrooms:
+                            2</span>
+                    </div>
+                    <div class="plan-object">
+                        <img src="./Img/bathroom-white.svg" class="plan-icon" alt="shower icon" loading="lazy"><span
+                            class="plan-txt">Bathrooms:
+                            1-2</span>
+                    </div>
+                </div>
+                <div class="bottom-button">
+                    <button type="button" class="button-3 check-availability">Check Availability</button>
+                    <button type="button" class="button-2 view-floor-plan">View Floor Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-4">
+        <div class="section-4-div">
+            <div class="section-4-image-div">
+                <img src="./Img/section-4-image-1.jpg" class="section-4-image-1" alt="sofa" loading="lazy">
+                <img src="./Img/section-4-image-2.jpg" class="section-4-image-2" alt="beach side apartment" loading="lazy">
+            </div>
+            <div class="section-bottom">
+                <span class="bottom-title">Ocean Apt.</span>
+                <p class="bottom-para">
+                    I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a
+                    story and let your users know a little more about you.
+                </p>
+                <div class="plan">
+                    <div class="plan-object">
+                        <img src="./Img/building-skin.svg" class="plan-icon" style="color:white"
+                            alt="building icon" loading="lazy"><span class="plan-txt">Floors: 1-2</span>
+                    </div>
+                    <div class="plan-object">
+                        <img src="./Img/window-skin.svg" class="plan-icon" alt="grid icon" loading="lazy"><span class="plan-txt">Space:
+                            150sqm</span>
+                    </div>
+                    <div class="plan-object">
+                        <img src="./Img/bedroom-skin.svg" class="plan-icon" alt="bed icon" loading="lazy"><span
+                            class="plan-txt">Bedrooms: 2</span>
+                    </div>
+                    <div class="plan-object">
+                        <img src="./Img/bathroom-skin.svg" class="plan-icon" alt="shower icon" loading="lazy"><span
+                            class="plan-txt">Bathrooms:
+                            1-2</span>
+                    </div>
+                </div>
+                <div class="bottom-button">
+                    <button type="button" class="button-2 check-availability">Check Availability</button>
+                    <button type="button" class="button-4 view-floor-plan">View Floor Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-5">
+        <div class="section-5-div">
+            <img src="./Img/section-5-image-1.jpg" class="section-5-image-1 animate" alt="women standing on beach" loading="lazy">
+            <p class="section-5-desc animate">“Immerse yourself in the seamless fusion of <span class='italic'>timeless
+                    architecture </span> and modern
+                design, where each home tells a story of its own”</p>
+            <img src="./Img/section-5-image-2.jpg" class="section-5-image-2 animate" alt="beach side apartment" loading="lazy">
+        </div>
+    </section>
+    <section class="section-6">
+        <div class="section-6-div">
+            <p class="section-6-title">Best Possible Location</p>
+            <div class="dist-time-container">
+                <div class="dist-time">
+                    <span class="time animate">02 Min.</span>
+                    <span class="place animate">from the beach</span>
+                </div>
+                <div class="dist-time">
+                    <span class="time italic animate">05 Min.</span>
+                    <span class="place animate">from city hall</span>
+                </div>
+                <div class="dist-time">
+                    <span class="time italic animate">10 Min.</span>
+                    <span class="place animate">from central station</span>
+                </div>
+            </div>
+            <div class="map-div">
+                <img src="./Img/La Perla map.avif" class="map animate" alt="map" loading="lazy">
+            </div>
+            <div class="section-6-image-container-1">
+                <div class="image-box">
+                    <img src="./Img/section-6-image-1.jpg" class="section-6-image section-6-image-1 animate" alt="architect's image" loading="lazy">
+                </div>
+                <div class="image-desc-box">
+                    <p class="image-title animate">The Architect</p>
+                    <p class="name animate">Raya Hayek</p>
+                    <p class="name-desc animate">Award winning architect and designer proudly presents her first
+                        residential
+                        project in town
+                    </p>
+                    <p class="image-para animate">I'm a paragraph. Click here to add your own text and edit me. It's easy.
+                        Just
+                        click “Edit Text” or double click me to add your own content and make changes to the font. I'm a
+                        great place for you to tell a story and let your users know a little more about you.</p>
+                </div>
+            </div>
+            <div class="section-6-image-container-2">
+                <div class="image-desc-box">
+                    <p class="image-title animate">The Developer</p>
+                    <p class="name animate">Mongedon Group</p>
+                    <p class="name-desc animate">With over 155 successful projects since 1989, Mogendor launches yet
+                        another
+                        architectural gem</p>
+                    <p class="image-para animate">I'm a paragraph. Click here to add your own text and edit me. It's easy.
+                        Just
+                        click “Edit Text” or double click me to add your own content and make changes to the font. I'm a
+                        great place for you to tell a story and let your users know a little more about you.
+                    </p>
+                </div>
+                <div class="image-box">
+                    <img src="./Img/section-6-image-2.jpg" class="section-6-image section-6-image-2 animate" alt="buildings" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="image-slideshow">
+        <div class="image-slideshow-header">
+            <h3 class="slideshow-title animate">Premier Amenities for Elevated Living</h3>
+            <p class="slideshow-desc animate">Indulge in <span class="italic">Unparalleled Luxury</span><br>
+                at Our Urban Oasis</p>
+        </div>
+        <div class="slideshow-container">
+            <div class="slideshow-image-div">
+                <img src="./Img/slideshow-image-1.jpg" class="slideshow-image" alt="concierge services" loading="lazy">
+                <span class="slideshow-image-desc">Concierge Services</span>
+            </div>
+            <div class="slideshow-image-div">
+                <img src="./Img/slideshow-image-2.jpg" class="slideshow-image" alt="co-working spaces" loading="lazy">
+                <span class="slideshow-image-desc">Co-Working Spaces</span>
+            </div>
+            <div class="slideshow-image-div">
+                <img src="./Img/slideshow-image-3.jpg" class="slideshow-image" alt="smart home technoogy integration" loading="lazy">
+                <span class="slideshow-image-desc">Smart Home Technology Integration</span>
+            </div>
+            <div class="slideshow-image-div">
+                <img src="./Img/slideshow-image-4.jpg" class="slideshow-image" alt="rooftop haven an infinity pool" loading="lazy">
+                <span class="slideshow-image-desc">Rooftop Haven an Infinity Pool</span>
+            </div>
+            <div class="slideshow-image-div">
+                <img src="./Img/slideshow-image-5.webp" class="slideshow-image" alt="valet parking" loading="lazy">
+                <span class="slideshow-image-desc">Valet Parking</span>
+            </div>
+            <div class="slideshow-image-div">
+                <img src="./Img/slideshow-image-6.jpg" class="slideshow-image" alt="residents club" loading="lazy">
+                <span class="slideshow-image-desc">Residents Club</span>
+            </div>
+            <div class="slideshow-image-div">
+                <img src="./Img/slideshow-image-7.jpg" class="slideshow-image" alt="private fitness center" loading="lazy">
+                <span class="slideshow-image-desc">Private Fitness Center</span>
+            </div>
+            <div class="slideshow-image-div">
+                <img src="./Img/slideshow-image-8.jpg" class="slideshow-image" alt="residents club" loading="lazy">
+                <span class="slideshow-image-desc">Residents Club</span>
+            </div>
+        </div>
+    </section>
+    <section class="pre-sale">
+        <div class="pre-sale-div">
+            <h1 class="pre-sale-heading animate">Exclusive <span class="italic">Pre-Sale</span> Now Open!</h1>
+            <p class="pre-sale-desc animate">Our team is ready to assist you in securing your piece of luxury. Don't
+                miss out on
+                this opportunity to make La Perla your address of distinction.
+            </p>
+            <button type="button" class="button-1 submit animate">Submit</button>
+        </div>
+    </section>
+    <section class="footer-image">
+    </section>
+    <footer class="footer-section">
+        <div class="footer-section-div">
+            <div class="footer-header">
+                <h1 class="footer-title animate">Get in Touch</h1>
+                <p class="footer-desc animate">Please submit your contact information and one of our sales associates
+                    will be in
+                    touch
+                    with you shortly
+                </p>
+            </div>
+            <form>
+                <div class="input">
+                    <label for="fname">First Name*</label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div class="input">
+                    <label for="lname">Last Name*</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+                <div class="input">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="input">
+                    <label for="num">Phone Number*</label>
+                    <input type="number" id="num" name="number">
+                </div>
+                <div class="input">
+                    <label for="residence">Residence Type*</label>
+                    <select id="residence" value="residence">
+                        <option>Choose an option</option>
+                        <option>Gardenia</option>
+                        <option>Oceania</option>
+                        <option>Sky</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="price-range">Price Range*</label>
+                    <select id="price-range">
+                        <option>Choose an option</option>
+                        <option>1M$-2M$</option>
+                        <option>2M$-4M$</option>
+                        <option>4M$-6M$</option>
+                        <option>6M$-10M$</option>
+                    </select>
+                </div>
+            </form>
+            <button type="submit" class="button-2">Submit</button>
+        </div>
+        <div class="end">
+            <div>
+                <a href="#">Accessibility Statement</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <a href="#">©2035 by La Perla. Powered and secured by Wix</a>
+        </div>
+    </footer>
+
+    <script src="realEstate.js"></script>
+    <script src="https://kit.fontawesome.com/a8c38362f2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
