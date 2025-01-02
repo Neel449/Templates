@@ -8,8 +8,135 @@
 
 :root {
     --spinnaker: "Spinnaker", serif;
+    --nav-color: #FFAE36;
 }
 
 body {
     font-family: var(--spinnaker);
+    background-image: url('./Img/home-page-background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+nav {
+    background-color: black;
+    position: fixed;
+    top:0;
+    z-index:1000;
+    width:100%;
+}
+.nav {
+    height:80px;
+    color:white;
+    max-width:1000px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+}
+.logo {
+    display:flex;
+    align-items: center;
+    gap:1.5rem;
+    cursor: pointer;
+}
+.stroke-box {
+    position:relative;
+}
+.stroke-div {
+    position:absolute;
+    width:4.5rem;
+    height:0.15rem;
+    background-color: white;
+    top:53%;
+    left:-10px;
+}
+.symbol {
+    font-size: 3rem;
+    color:white;
+}
+.link-container {
+    display:flex;
+    align-items: center;
+}
+.link {
+    display:inline-block;
+    padding:1rem 1.5rem;
+    color:white;
+    text-decoration: none;
+    transition:color 0.5s ease-in-out;
+}
+.link:hover {
+    color:rgb(157, 157, 157);
+}
+.login {
+    display:inline-block;
+    color:var(--nav-color);
+}
+.login-box {
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    text-decoration: none;
+}
+.avatar-upper-box {
+    background-color: var(--nav-color);
+    height:1.7rem;
+    width:1.7rem;
+    border-radius:50%;
+    padding:px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar-box {
+    background-color: var(--nav-color);
+    height:1.5rem;
+    width:1.5rem;
+    border-radius: 50%;
+    overflow:hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.fa-user {
+    position:absolute;
+    bottom:-1px;
+    font-size:1.1rem;
+    color:black;
+}
+.shopping-bag {
+    height:2.1rem;
+}
+.header {
+    height:100vh;
+    background-image: url('./Img/hero-image.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    margin-top:80px;
+}
+.overlay {
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.426);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-stroke-div {
+    height:2rem;
+    width:400px;
+}
+.hero-symbol {
+    font-size:22rem;
+}
+.hero-title {
+    font-size:2rem;
+    color:white;
 }
