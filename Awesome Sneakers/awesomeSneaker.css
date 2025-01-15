@@ -19,13 +19,18 @@ body {
     background-size: cover;
 }
 nav {
+    position: fixed;
+    z-index: 10000;
+    width:100%;
+    top:0;
     background-color: black;
 }
 .nav {
-    padding:0.8rem 0rem;
+    padding: 0.5rem 0rem;
     max-width:1000px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin:0 auto;
 }
 .logo-div {
@@ -36,17 +41,13 @@ nav {
 
 .logo-box {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .logo {
-    font-size: 4rem; 
-    font-weight: bold;
+    font-size: 3rem;
     color: white;
-    display: inline-block;
-    line-height: 1;
+    display:block;
+    margin-bottom:0.4rem;
 }
 
 .stroke-div {
@@ -54,9 +55,9 @@ nav {
     position: absolute;
     height: 3px;
     width: 70px;
-    top: 50%;
+    top: 52%;
     transform: translateY(-50%);
-    left: -13px; 
+    left: -12px; 
 }
 
 .logo-name {
@@ -66,10 +67,6 @@ nav {
     padding: 0;
     display: flex;
     align-items: center; 
-}
-
-.logo-div, .logo-box, .logo-name, .logo {
-    border: 1px solid red; /* Temporary for debugging */
 }
 
 .links {
@@ -115,4 +112,43 @@ nav {
 }
 .shopping-cart {
     width:2rem;
+}
+
+.hero {
+    background-image: url('./Img/hero-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    position:relative;
+}
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.363);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+}
+.hero-logo {
+    position: relative;
+}
+
+.as {
+    color:white;
+    font-size:20rem;
+    margin:0;
+    padding:0;
+}
+.as-stroke {
+    position:absolute;
+    top:50%;
+    width:100px;
+    height:5px;
+    background-color: white;
 }
