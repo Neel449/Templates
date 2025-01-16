@@ -4,88 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a movie website">
-    <title>CinemaSphere</title>
-    <script src="https://kit.fontawesome.com/a8c38362f2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>MovieMania</title>
     <link rel="stylesheet" href="movie.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preload" href="Movie-Wallpaper/megan.jpg" as="image">
+    <link rel="preload" href="Movie-Wallpaper/baby-driver.jpg" as="image">
+    <link rel="preload" href="Movie-Wallpaper/bullet-train.jpg" as="image">
+    <link rel="preload" href="Movie-Wallpaper/last-night-in-soho.jpg" as="image">
+    <link rel="preload" href="Movie-Wallpaper/Nobody.jpg" as="image">
+    <link rel="preload" href="Movie-Wallpaper/Sonic-the-hedgehog-3.jpg" as="image">
+    <link rel="preload" href="Movie-Wallpaper/The-super-mario-bros.jpg" as="image">
+    <link rel="preload" href="Movie-Wallpaper/The-wild-robot.jpeg" as="image">
+    <link rel="preload" href="Movie-Wallpaper/Whiplash.jpg" as="image">
 </head>
 
 <body>
-    <header>
-        <a href="#" class="logo">CinemaSphere</a>
-        <ul class="nav">
-            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-            <li><a href="#">Adults</a></li>
-            <li><a href="#">Kids</a></li>
-            <li><a href="#">Trends</a></li>
-            <li><a href="#">My List</a></li>
-        </ul>
-        <div class="search">
-            <input type="text" placeholder="Search">
-            <i class="fa fa-search" aria-hidden="true"></i>
+    <header class="flex">
+        <div class="logo">MovieMania</div>
+        <nav class="flex nav">
+            <a href="#" class="nav-links" aria-label="Home"><i class="fa-solid fa-house"></i></a>
+            <a href="#" class="nav-links" aria-label="Adults">Adults</a>
+            <a href="#" class="nav-links" aria-label="Kids">Kids</a>
+            <a href="#" class="nav-links" aria-label="Trends">Trends</a>
+            <a href="#" class="nav-links" aria-label="My List">My List</a>
+        </nav>
+        <div class="upper-search-div">
+            <div class="search-div flex">
+                <label for="search-input"><i class="fa-solid fa-magnifying-glass"></i></label>
+                <input type="text" class="search-input" id="search-input">
+            </div>
         </div>
     </header>
-    <div class="banner">
-        <div class="content active">
-            <img src="./Img/the-little-mermaid-title.png" alt="" class="movie-title">
-            <h4>
-                <span>2023</span>
-                <span><i>12+</i></span>
-                <span>2h 14min</span>
-                <span>Romance</span>
-            </h4>
-            <p>The Little Mermaid is a magical tale of Ariel, a curious mermaid who dreams of exploring the human world,
-                finding love, and discovering her voice in this enchanting underwater adventure.
-            </p>
-            <div class="button">
-                <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Watch</a>
-                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
+    <main>
+        <div class="main-content">
+            <div class="movie-detail-div">
+                <h2 class="movie-title"></h2>
+                <p class="movie-year"></p>
+                <p class="movie-rating"></p>
+                <p class="movie-genre"></p>
+                <p class="movie-description"></p>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-title="Baby Driver" data-year="2017" data-rating="R" data-genre="Action, Crime, Drama" data-description="A young getaway driver with a passion for music is forced to work for a crime boss." data-background="Movie-Wallpaper/Baby-driver.jpg">
+                        <img src="Movie-Wallpaper/baby-driver.jpg" alt="Baby Driver Poster">
+                    </div>
+                    <div class="swiper-slide" data-title="Bullet Train" data-year="2022" data-rating="R" data-genre="Action, Comedy, Thriller" data-description="Five assassins aboard a fast train find out their missions have something in common." data-background="Movie-Wallpaper/bullet-train.jpg">
+                        <img src="Movie-Wallpaper/bullet-train.jpg" alt="Bullet Train Poster">
+                    </div>
+                    <div class="swiper-slide" data-title="Last Night in Soho" data-year="2021" data-rating="R" data-genre="Drama, Horror, Mystery" data-description="An aspiring fashion designer is mysteriously able to enter the 1960s where she encounters her idol." data-background="Movie-Wallpaper/last-night-in-soho.jpg">
+                        <img src="Movie-Wallpaper/last-night-in-soho.jpg" alt="Last Night in Soho Poster">
+                    </div>
+                    <div class="swiper-slide" data-title="Megan" data-year="2023" data-rating="PG-13" data-genre="Horror, Sci-Fi, Thriller" data-description="A brilliant roboticist creates a lifelike doll that becomes obsessed with protecting its owner at any cost." data-background="Movie-Wallpaper/megan.jpg">
+                        <img src="Movie-Wallpaper/megan.jpg" alt="Megan Poster">
+                    </div>
+                    <div class="swiper-slide" data-title="Nobody" data-year="2021" data-rating="R" data-genre="Action, Crime, Thriller" data-description="A mild-mannered father who is overlooked by his family becomes a vigilante when his house is robbed, unleashing a deadly chain of events." data-background="Movie-Wallpaper/Nobody.jpg">
+                        <img src="Movie-Wallpaper/Nobody.jpg" alt="Nobody Poster">
+                    </div>
+                    <div class="swiper-slide" data-title="Sonic the Hedgehog 3" data-year="2024" data-rating="PG" data-genre="Action, Adventure, Comedy" data-description="Sonic teams up with his friends to face off against new villains and prevent a dangerous plot from unfolding, while continuing his fight for justice." data-background="Movie-Wallpaper/Sonic-the-hedgehog-3.jpg">
+                        <img src="Movie-Wallpaper/Sonic-the-hedgehog-3.jpg" alt="Sonic the Hedgehog 3 Poster">
+                    </div>
+                    <div class="swiper-slide" data-title="Super Mario Bros" data-year="2023" data-rating="PG" data-genre="Animation, Adventure, Comedy" data-description="The iconic video game characters Mario and Luigi embark on an epic adventure to rescue Princess Peach and defeat Bowser." data-background="Movie-Wallpaper/The-super-mario-bros.jpg">
+                        <img src="Movie-Wallpaper/The-super-mario-bros.jpg" alt="Super Mario Bros Poster">
+                    </div>
+                    <div class="swiper-slide" data-title="The Wild Robot" data-year="2024" data-rating="PG" data-genre="Adventure, Animation, Sci-Fi" data-description="A robot wakes up in a wild forest with no memory of who she is. As she discovers the beauty of nature and life, she forms an unlikely bond with the animals." data-background="Movie-Wallpaper/The-wild-robot.jpeg">
+                        <img src="Movie-Wallpaper/The-wild-robot.jpeg" alt="The Wild Robot Poster">
+                    </div>
+                    <div class="swiper-slide" data-title="Whiplash" data-year="2014" data-rating="R" data-genre="Drama, Music" data-description="A talented young drummer at a prestigious music conservatory faces a demanding and abusive instructor who pushes him to his limits in pursuit of greatness." data-background="Movie-Wallpaper/Whiplash.jpg">
+                        <img src="Movie-Wallpaper/Whiplash.jpg" alt="Whiplash Poster">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="carousel-box">
-            <div class="carousel">
-                <div class="carousel-item">
-                    <img src="./Img/Movie/the-little-mermaid.jpeg" alt="The little mermaid">
-                </div>
-                <div class="carousel-item">
-                    <img src="./Img/Movie/65.jpg" alt="65">
-                </div>
-                <div class="carousel-item">
-                    <img src="./Img/Movie/the-covenant.jpg" alt="The covenant">
-                </div>
-                <div class="carousel-item">
-                    <img src="./Img/Movie/the-black-demon.jpg" alt="The Black Demon">
-                </div>
-                <div class="carousel-item">
-                    <img src="./Img/Movie/the-tank.jpeg" alt="The Tank">
-                </div>
-            </div>
+    </main>
+    <footer>
+        <div class="watch-trailer">
+            <i class="fa-solid fa-play"></i>
+            <span class="watch-later-text">Watch Trailer</span>
         </div>
-        <a href="#" class="play"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Watch Trailer</a>
-        <ul class="sci">
-            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        </ul>
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+    </footer>
 
-    </div>
-
-
-    <script
-  src="https://code.jquery.com/jquery-3.7.1.js"
-  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a8c38362f2.js" crossorigin="anonymous"></script>
     <script src="movie.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.carousel.carousel-slider').carousel({
-                fullWidth: true,
-                indicators: true,
-            });
-        });
-    </script>
 </body>
 
 </html>
