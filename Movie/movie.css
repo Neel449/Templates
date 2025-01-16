@@ -201,7 +201,11 @@ header {
     background: var(--primary);
 }
 
-.carousel-item> img {
-    width: 100px;
-    
+.banner .carousel-box {
+    position: relative;
+    max-width: 950px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
 }

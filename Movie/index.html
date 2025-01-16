@@ -7,6 +7,7 @@
     <meta name="description" content="This is a movie website">
     <title>CinemaSphere</title>
     <script src="https://kit.fontawesome.com/a8c38362f2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="movie.css">
 </head>
 
@@ -71,9 +72,20 @@
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="movie.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true,
+            });
+        });
+    </script>
 </body>
 
 </html>
