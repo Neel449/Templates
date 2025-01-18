@@ -4,22 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="e-commerce website for electronics">
     <title>TechShed</title>
     <link rel="stylesheet" href="electronics.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preload" href="./Img/hero1.png" as="image">
 </head>
 
 <body>
     <header>
         <div class="header-1">
             <div class="header-1-left-content">
-                <img src="./Img/box.svg">
+                <img src="./Img/box.svg" alt="box">
                 <span class="image-desc">Free Shipping for orders over $50</span>
             </div>
             <div class="header-1-right-content">
                 <span><a href="#">About</a></span>
-                <span><a href="#">Contact</a></span>
-                <span><a href="#">Help Center</a></span>
+                <span><a href="#newsletter-section">Contact</a></span>
+                <span><a href="#newsletter-section">Help Center</a></span>
                 <span>Call Us <a href="#">9116394555</a></span>
             </div>
         </div>
@@ -35,7 +37,7 @@
             </div>
             <div class="header-2-right-content">
                 <div class="login-div">
-                    <img src="./Img/user.svg">
+                    <img src="./Img/user.svg" alt="user">
                     <span class="login">Log In</span>
                 </div>
                 <i class="fa-regular fa-heart"></i>
@@ -59,6 +61,7 @@
     </header>
 
     <section class="hero">
+        <img src="./Img/hero1.png" alt="hero-image" class="hero-image">
         <div class="hero-content">
             <span class="best-prices">Best Prices</span>
             <p class="hero-desc">Incredible Prices</p>
@@ -71,7 +74,7 @@
 
     <section class="sub-hero">
         <div class="sub-hero-image sub-hero-image-1">
-            <img src="./Img/sub-hero-1.jpg" class="deal-image">
+            <img src="./Img/sub-hero-1.jpg" class="deal-image" alt="deal-image">
             <div class="sub-hero-content">
                 <span class="sub-hero-title">Holiday Deals</span>
                 <span class="offer">Up to</span>
@@ -81,7 +84,7 @@
             </div>
         </div>
         <div class="sub-hero-image sub-hero-image-2">
-            <img src="./Img/sub-hero-2.jpg" class="deal-image">
+            <img src="./Img/sub-hero-2.jpg" class="deal-image" alt="deal-image">
             <div class="sub-hero-content">
                 <span class="sub-hero-title">Just In</span>
                 <span class="offer">Take Your</span>
@@ -95,28 +98,28 @@
 
     <section class="facility-section">
         <div class="facility">
-            <img src="./Img/facility-4.svg" class="facility-image">
+            <img src="./Img/facility-4.svg" class="facility-image" alt="facility-image">
             <div class="facility-desc-box">
                 <p class="facility-desc">Curb-side</p>
                 <p class="facility-desc">Pickup</p>
             </div>
         </div>
         <div class="facility">
-            <img src="./Img/facility-1.svg" class="facility-image">
+            <img src="./Img/facility-1.svg" class="facility-image" alt="facility-image">
             <div class="facility-desc-box">
                 <p class="facility-desc">Free shipping on</p>
                 <p class="facility-desc">Orders above $50</p>
             </div>
         </div>
         <div class="facility">
-            <img src="./Img/facility-2.svg" class="facility-image">
+            <img src="./Img/facility-2.svg" class="facility-image" alt="facility-image">
             <div class="facility-desc-box">
                 <p class="facility-desc">Low prices</p>
                 <p class="facility-desc">Guaranteed</p>
             </div>
         </div>
         <div class="facility">
-            <img src="./Img/facility-3.svg" class="facility-image">
+            <img src="./Img/facility-3.svg" class="facility-image" alt="facility-image">
             <div class="facility-desc-box">
                 <p class="facility-desc">Available to</p>
                 <p class="facility-desc">you 24/7</p>
@@ -124,163 +127,198 @@
         </div>
     </section>
 
-    <!-- <section class="products">
-        <div class="products-content">
-            <h2 class="products-header">Best Sellers</h2>
-            <div class="product-div swiper">
+    <section class="product-section">
+        <h1 class="product-section-header">Best Sellers</h1>
+        <div class="swiper">
+            <div class="card-wrapper">
                 <div class="swiper-wrapper">
                     <div class="product swiper-slide">
                         <div class="product-image-div">
-                            <img src="./Img/best-seller-1.jpg" class="product-image">
+                            <img src="./Img/best-seller-1.jpg" class="product-image" alt="product-image">
                         </div>
-                        <p class="product-name">Product Name</p>
-                        <p class="product-price">Product Price</p>
+                        <div class="product-detail">
+                            <p class="product-name">In-ear Noise Cancelling & Isolating Wireless Earbuds</p>
+                            <p class="product-price"><span class="stroke">$85.00</span> $70.00</p>
+                            <span class="sale-tag">SALE</span>
+                        </div>
                     </div>
                     <div class="product swiper-slide">
                         <div class="product-image-div">
-                            <img src="./Img/best-seller-2.jpg" class="product-image">
+                            <img src="./Img/best-seller-2.jpg" class="product-image" alt="product-image">
                         </div>
-                        <p class="product-name">Product Name</p>
-                        <p class="product-price">Product Price</p>
+                        <div class="product-detail">
+                            <p class="product-name">JP Gaming Laptop 15.6" Laptop 256GB</p>
+                            <p class="product-price"><span class="stroke">$85.00</span> $70.00</p>
+                            <span class="sale-tag">SALE</span>
+                        </div>
                     </div>
                     <div class="product swiper-slide">
                         <div class="product-image-div">
-                            <img src="./Img/best-seller-3.jpg" class="product-image">
+                            <img src="./Img/best-seller-3.jpg" class="product-image" alt="product-image">
                         </div>
-                        <p class="product-name">Product Name</p>
-                        <p class="product-price">Product Price</p>
+                        <div class="product-detail">
+                            <p class="product-name">SDK Portable Bluetooth Speaker</p>
+                            <p class="product-price">$85.00</p>
+                        </div>
                     </div>
                     <div class="product swiper-slide">
                         <div class="product-image-div">
-                            <img src="./Img/best-seller-4.png" class="product-image">
+                            <img src="./Img/best-seller-4.png" class="product-image" alt="product-image">
                         </div>
-                        <p class="product-name">Product Name</p>
-                        <p class="product-price">Product Price</p>
+                        <div class="product-detail">
+                            <p class="product-name">JP Space - Tablet 10.4" Wi-Fi 32GB</p>
+                            <p class="product-price"><span class="stroke">$85</span> $70</p>
+                            <span class="sale-tag">SALE</span>
+                        </div>
                     </div>
                     <div class="product swiper-slide">
                         <div class="product-image-div">
-                            <img src="./Img/best-seller-5.jpg" class="product-image">
+                            <img src="./Img/best-seller-5.jpg" class="product-image" alt="product-image">
                         </div>
-                        <p class="product-name">Product Name</p>
-                        <p class="product-price">Product Price</p>
+                        <div class="product-detail">
+                            <p class="product-name">HKI Tech Quadcopter Drone With 360 Camera & Controller</p>
+                            <p class="product-price">$85.00</p>
+                        </div>
                     </div>
                     <div class="product swiper-slide">
                         <div class="product-image-div">
-                            <img src="./Img/best-seller-6.jpg" class="product-image">
+                            <img src="./Img/best-seller-6.jpg" class="product-image" alt="product-image">
                         </div>
-                        <p class="product-name">Product Name</p>
-                        <p class="product-price">Product Price</p>
+                        <div class="product-detail">
+                            <p class="product-name">Shell 50" Class LED 4K UHD Smart TV</p>
+                            <p class="product-price">$85.00</p>
+                        </div>
                     </div>
                     <div class="product swiper-slide">
                         <div class="product-image-div">
-                            <img src="./Img/best-seller-7.jpg" class="product-image">
+                            <img src="./Img/best-seller-7.jpg" class="product-image" alt="product-image">
                         </div>
-                        <p class="product-name">Product Name</p>
-                        <p class="product-price">Product Price</p>
+                        <div class="product-detail">
+                            <p class="product-name">Smartphone Z Pixel Max 128GB Unlocked</p>
+                            <p class="product-price"><span class="stroke">$85.00</span> $70.00</p>
+                            <span class="sale-tag">SALE</span>
+                        </div>
                     </div>
                     <div class="product swiper-slide">
                         <div class="product-image-div">
-                            <img src="./Img/best-seller-8.jpg" class="product-image">
+                            <img src="./Img/best-seller-8.jpg" class="product-image" alt="product-image">
                         </div>
-                        <p class="product-name">Product Name</p>
-                        <p class="product-price">Product Price</p>
+                        <div class="product-detail">
+                            <p class="product-name">Fitboot Inspire Fitness Tracker With Heart Rate Tracking</p>
+                            <p class="product-price"><span class="stroke">$85.00</span> $70.00</p>
+                            <span class="sale-tag">SALE</span>
+                        </div>
                     </div>
                     <div class="product swiper-slide">
                         <div class="product-image-div">
-                            <img src="./Img/best-seller-9.jpg" class="product-image">
+                            <img src="./Img/best-seller-9.jpg" class="product-image" alt="product-image">
                         </div>
-                        <p class="product-name">Product Name</p>
-                        <p class="product-price">Product Price</p>
+                        <div class="product-detail">
+                            <p class="product-name">White Buds Wireless Earbud Headphones</p>
+                            <p class="product-price">$85.00</p>
+                        </div>
                     </div>
                     <div class="product swiper-slide">
                         <div class="product-image-div">
-                            <img src="./Img/best-seller-10.png" class="product-image">
+                            <img src="./Img/best-seller-10.png" class="product-image" alt="product-image">
                         </div>
-                        <p class="product-name">Product Name</p>
-                        <p class="product-price">Product Price</p>
+                        <div class="product-detail">
+                            <p class="product-name">Ocean Pro 11 - 12.3" Touch Screen</p>
+                            <p class="product-price"><span class="stroke">$85.00</span> $70.00</p>
+                            <span class="sale-tag">SALE</span>
+                        </div>
                     </div>
                     <div class="product swiper-slide">
                         <div class="product-image-div">
-                            <img src="./Img/best-seller-11.jpg" class="product-image">
+                            <img src="./Img/best-seller-11.jpg" class="product-image" alt="product-image">
                         </div>
-                        <p class="product-name">Product Name</p>
-                        <p class="product-price">Product Price</p>
+                        <div class="product-detail">
+                            <p class="product-name">65" Class Nano LED 4K UHD Smart TV</p>
+                            <p class="product-price"><span class="stroke">$85.00</span> $70.00</p>
+                            <span class="sale-tag">SALE</span>
+                        </div>
                     </div>
                     <div class="product swiper-slide">
                         <div class="product-image-div">
-                            <img src="./Img/best-seller-12.jpg" class="product-image">
+                            <img src="./Img/best-seller-12.jpg" class="product-image" alt="product-image">
                         </div>
-                        <p class="product-name">Product Name</p>
-                        <p class="product-price">Product Price</p>
+                        <div class="product-detail">
+                            <p class="product-name">Megapixel Waterproof Mini Digital Camera</p>
+                            <p class="product-price"><span class="stroke">$85.00</span> $70.00</p>
+                            <span class="sale-tag">SALE</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+    
+                <div class="swiper-button-prev swiper-button swiper-button-button"></div>
+                <div class="swiper-button-next swiper-button swiper-button-button"></div>
             </div>
         </div>
-    </section> -->
+
+        <button type="button" class="shop-2 view-all">View All</button>
+
+    </section>
 
     <section class="categories-section">
         <h2 class="categories-header">Shop by Categories</h2>
         <div class="categories">
             <div class="category">
                 <div class="category-image-div">
-                    <img src="./Img/category-1-computers.jpg" alt="Computer">
+                    <img src="./Img/category-1-computers.jpg" alt="Computer" class="category-image">
                 </div>
                 <span class="category-name">Computers</span>
             </div>
             <div class="category">
                 <div class="category-image-div">
-                    <img src="./Img/category-2-mobile.webp" alt="Mobile">
+                    <img src="./Img/category-2-mobile.webp" alt="Mobile" class="category-image">
                 </div>
                 <span class="category-name">Mobile</span>
             </div>
             <div class="category">
                 <div class="category-image-div">
-                    <img src="./Img/category-3-drones.webp" alt="Drones">
+                    <img src="./Img/category-3-drones.webp" alt="Drones" class="category-image">
                 </div>
                 <span class="category-name">Drones & Cameras</span>
             </div>
             <div class="category">
                 <div class="category-image-div">
-                    <img src="./Img/category-4-sale.webp" alt="Sale">
+                    <img src="./Img/category-4-sale.webp" alt="Sale" class="category-image">
                 </div>
                 <span class="category-name">Sales</span>
             </div>
             <div class="category">
                 <div class="category-image-div">
-                    <img src="./Img/category-5-tablet.webp" alt="Tablet">
+                    <img src="./Img/category-5-tablet.webp" alt="Tablet" class="category-image">
                 </div>
                 <span class="category-name">Tablets</span>
             </div>
             <div class="category">
                 <div class="category-image-div">
-                    <img src="./Img/category-6-bestseller.webp" alt="Bestseller">
+                    <img src="./Img/category-6-bestseller.webp" alt="Bestseller" class="category-image">
                 </div>
                 <span class="category-name">Best Sellers</span>
             </div>
             <div class="category">
                 <div class="category-image-div">
-                    <img src="./Img/category-7-tv.jpg" alt="TV">
+                    <img src="./Img/category-7-tv.jpg" alt="TV" class="category-image">
                 </div>
                 <span class="category-name">T.V & Home Cinema</span>
             </div>
             <div class="category">
                 <div class="category-image-div">
-                    <img src="./Img/category-8-wearables.webp" alt="Wearables">
+                    <img src="./Img/category-8-wearables.webp" alt="Wearables" class="category-image">
                 </div>
                 <span class="category-name">Wearable Tech</span>
             </div>
             <div class="category">
                 <div class="category-image-div">
-                    <img src="./Img/category-9-speakers.webp" alt="Speakers">
+                    <img src="./Img/category-9-speakers.webp" alt="Speakers" class="category-image">
                 </div>
                 <span class="category-name">Speakers</span>
             </div>
             <div class="category">
                 <div class="category-image-div">
-                    <img src="./Img/category-10-headphones.webp" alt="Headphones">
+                    <img src="./Img/category-10-headphones.webp" alt="Headphones" class="category-image">
                 </div>
                 <span class="category-name">Headphones</span>
             </div>
@@ -304,6 +342,79 @@
         </div>
     </section>
 
+    <section class="product-section">
+        <h1 class="product-section-header">On Sale</h1>
+        <div class="swiper">
+            <div class="card-wrapper">
+                <div class="swiper-wrapper">
+                    <div class="product swiper-slide">
+                        <div class="product-image-div">
+                            <img src="./Img/on-sale-1.jpg" class="product-image" alt="product-image">
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-name">H1C Indoor Wireless 1080p Network Security Camera</p>
+                            <p class="product-price"><span class="stroke">$85.00</span> $70.00</p>
+                            <span class="sale-tag">SALE</span>
+                        </div>
+                    </div>
+                    <div class="product swiper-slide">
+                        <div class="product-image-div">
+                            <img src="./Img/on-sale-2.jpg" class="product-image" alt="product-image">
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-name">OVE Light Space 5G, 128GB</p>
+                            <p class="product-price"><span class="stroke">$85.00</span> $70.00</p>
+                            <span class="sale-tag">SALE</span>
+                        </div>
+                    </div>
+                    <div class="product swiper-slide">
+                        <div class="product-image-div">
+                            <img src="./Img/on-sale-3.jpg" class="product-image" alt="product-image">
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-name">Turn5 Portable Bluetooth Speaker</p>
+                            <p class="product-price"><span class="stroke">$85.00</span> $70.00</p>
+                        </div>
+                    </div>
+                    <div class="product swiper-slide">
+                        <div class="product-image-div">
+                            <img src="./Img/on-sale-4.jpg" class="product-image" alt="product-image">
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-name">Space Moon Smartwatch With Charger</p>
+                            <p class="product-price"><span class="stroke">$85</span> $70</p>
+                            <span class="sale-tag">SALE</span>
+                        </div>
+                    </div>
+                    <div class="product swiper-slide">
+                        <div class="product-image-div">
+                            <img src="./Img/on-sale-5.jpg" class="product-image" alt="product-image">
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-name">Journey Glass XD Virtual Reality Headset</p>
+                            <p class="product-price"><span class="stroke">$85.00</span> $70.00</p>
+                        </div>
+                    </div>
+                    <div class="product swiper-slide">
+                        <div class="product-image-div">
+                            <img src="./Img/on-sale-6.jpg" class="product-image" alt="product-image">
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-name">Pilates 16" Touch Screen Laptop 24GB Memory</p>
+                            <p class="product-price"><span class="stroke">$85.00</span> $70.00</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="swiper-button-prev swiper-button swiper-button-button"></div>
+                <div class="swiper-button-next swiper-button swiper-button-button"></div>
+            </div>
+        </div>
+
+        <button type="button" class="shop-2 view-all">View All</button>
+
+    </section>
+
     <section class="drone-section">
         <div class="drone-left-div">
             <span class="today-special">Today Special</span>
@@ -324,11 +435,11 @@
     <section class="brands-section">
         <h2 class="brand-title">Brands</h2>
         <div class="brands-div">
-            <img src="./Img/brand-1.webp">
-            <img src="./Img/brand-2.webp">
-            <img src="./Img/brand-3.webp">
-            <img src="./Img/brand-4.webp">
-            <img src="./Img/brand-5.webp">
+            <img src="./Img/brand-1.webp" alt="brand">
+            <img src="./Img/brand-2.webp" alt="brand">
+            <img src="./Img/brand-3.webp" alt="brand">
+            <img src="./Img/brand-4.webp" alt="brand">
+            <img src="./Img/brand-5.webp" alt="brand">
         </div>
     </section>
 
@@ -351,7 +462,7 @@
         </div>
     </section>
 
-    <section class="newsletter-section">
+    <section class="newsletter-section" id="newsletter-section">
         <h3 class="newsletter-header">Newsletter</h3>
         <p class="newsletter-header-desc">Sign up to receive updates on new arrivals and special offers</p>
         <form>
@@ -377,6 +488,7 @@
     <script src="https://kit.fontawesome.com/a8c38362f2.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="electronics.js"></script>
+
 </body>
 
 </html>
