@@ -11,13 +11,50 @@
 
 <body>
     <header>
-        <div>
-
-        </div>
-        <div>
-            <div class="log-in">
-
+        <div class="header-1">
+            <div class="header-1-left-content">
+                <img src="./Img/box.svg">
+                <span class="image-desc">Free Shipping for orders over $50</span>
             </div>
+            <div class="header-1-right-content">
+                <span><a href="#">About</a></span>
+                <span><a href="#">Contact</a></span>
+                <span><a href="#">Help Center</a></span>
+                <span>Call Us <a href="#">9116394555</a></span>
+            </div>
+        </div>
+        <div class="header-2">
+            <div class="header-2-left-content">
+                <h1 class="company-name">TechShed</h1>
+                <div class="search-div">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <div class="magnifying-glass">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="header-2-right-content">
+                <div class="login-div">
+                    <img src="./Img/user.svg">
+                    <span class="login">Log In</span>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+                <div class="cart-div">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="circle-div">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-3">
+            <a href="#">Shop All</a>
+            <a href="#">Computers</a>
+            <a href="#">Tablets</a>
+            <a href="#">Drones & Cameras</a>
+            <a href="#">Audio</a>
+            <a href="#">Mobile</a>
+            <a href="#">T.V & Home Cinema</a>
+            <a href="#">Wearable Tech</a>
+            <a href="#">Sale</a>
         </div>
     </header>
 
@@ -34,6 +71,7 @@
 
     <section class="sub-hero">
         <div class="sub-hero-image sub-hero-image-1">
+            <img src="./Img/sub-hero-1.jpg" class="deal-image">
             <div class="sub-hero-content">
                 <span class="sub-hero-title">Holiday Deals</span>
                 <span class="offer">Up to</span>
@@ -43,6 +81,7 @@
             </div>
         </div>
         <div class="sub-hero-image sub-hero-image-2">
+            <img src="./Img/sub-hero-2.jpg" class="deal-image">
             <div class="sub-hero-content">
                 <span class="sub-hero-title">Just In</span>
                 <span class="offer">Take Your</span>
@@ -281,10 +320,16 @@
             <img src="./Img/drone-clip.png" alt="drone">
         </div>
     </section>
-    
+
     <section class="brands-section">
         <h2 class="brand-title">Brands</h2>
-
+        <div class="brands-div">
+            <img src="./Img/brand-1.webp">
+            <img src="./Img/brand-2.webp">
+            <img src="./Img/brand-3.webp">
+            <img src="./Img/brand-4.webp">
+            <img src="./Img/brand-5.webp">
+        </div>
     </section>
 
     <section class="help-section">
@@ -295,7 +340,7 @@
                     <p class="help-header">Out Our Help Center</p>
                 </div>
                 <div class="help-desc-div">
-                    <p class="help-desc">I'm a paragraph. Click here to add your own text and</p> 
+                    <p class="help-desc">I'm a paragraph. Click here to add your own text and</p>
                     <p class="help-desc">edit me. Let your users get to know you.</p>
                 </div>
                 <button type="button" class="shop-3">Go to Help Center</button>
@@ -306,6 +351,28 @@
         </div>
     </section>
 
+    <section class="newsletter-section">
+        <h3 class="newsletter-header">Newsletter</h3>
+        <p class="newsletter-header-desc">Sign up to receive updates on new arrivals and special offers</p>
+        <form>
+            <label for="email">Email *</label>
+            <div class="input-button">
+                <input type="text" id="email">
+                <button type="button" class="subscribe">Subscribe</button>
+            </div>
+            <div class="checkbox-div">
+                <label class="custom-checkbox-div">
+                    <input type="checkbox" id="yes">
+                    <span class="custom-checkbox"></span>
+                </label>
+                <label for="yes">Yes, subscribe me to your newsletter.</label>
+            </div>
+        </form>
+    </section>
+
+    <div class="fixed-chat">
+        <img src="./Img/chat.svg" alt="chat">
+    </div>
 
     <script src="https://kit.fontawesome.com/a8c38362f2.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
