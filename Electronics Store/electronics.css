@@ -3,7 +3,7 @@
     margin:0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    /* border:1px solid red; */
+    border:1px solid red;
 }
 body {
     background-color: rgb(229, 229, 229);
